@@ -5,337 +5,320 @@ date: 2026-11-11
 lang: en
 ---
 
-> From 49 items, 15 important content pieces were selected
+> From 47 items, 15 important content pieces were selected
 
 ---
 
 **Technology News**
-1. [Microsoft announces .NET 11, a new major version of the platform](#item-tech-news-1) ⭐️ 9.0/10
-2. [AMD Zen 6 Deep-Dive Details Core, I/O Die, and 32-Core Chiplets](#item-tech-news-2) ⭐️ 8.0/10
-3. [DeepMind introduces AlphaProof Code for formal code verification](#item-tech-news-3) ⭐️ 8.0/10
-4. [Protecting SSH Keys with macOS Secure Enclave](#item-tech-news-4) ⭐️ 7.0/10
-5. [Synaptics patent claims halt open-source DisplayLink driver work](#item-tech-news-5) ⭐️ 7.0/10
-6. [Essay argues AI-assisted coding yields fragile, opaque codebases](#item-tech-news-6) ⭐️ 7.0/10
-7. [VulnCheck&\#x27;s November update tracks Anthropic-discovered vulnerabilities](#item-tech-news-7) ⭐️ 7.0/10
-8. [Chrome and partners ship modern-web-guidance 1.0 for coding agents](#item-tech-news-8) ⭐️ 7.0/10
-9. [MiniMax opens MiniMax H3 Image weights with 10-second 4K generation](#item-tech-news-9) ⭐️ 7.0/10
-10. [Telegram Post Claims Public Launch of Gemini 4 Carbon](#item-tech-news-10) ⭐️ 7.0/10
+1. [Voltage glitching used to unlock A100 features in mining card](#item-tech-news-1) ⭐️ 8.0/10
+2. [AWS releases official local service emulator, built in Rust by agent swarm](#item-tech-news-2) ⭐️ 8.0/10
+3. [False Smoke Alarm Nearly Took Down Jane Street&\#x27;s Only NYC Datacenter](#item-tech-news-3) ⭐️ 7.0/10
+4. [WSJ Headline Claims Nvidia Is Preparing to Oust CEO Jensen Huang](#item-tech-news-4) ⭐️ 7.0/10
+5. [Tim Peters, author of the Zen of Python, has died](#item-tech-news-5) ⭐️ 7.0/10
+6. [Linear Programming Proposed for Constrained Weight Editing](#item-tech-news-6) ⭐️ 7.0/10
+7. [Google launches Gemini Decisions API with multimodal Decision 1](#item-tech-news-7) ⭐️ 7.0/10
+8. [Anthropic IPO video details four-chip Claude strategy and a three-day AMD port](#item-tech-news-8) ⭐️ 7.0/10
+9. [Paper argues &\#x27;AI slop&\#x27; is a community judgement, not a content property](#item-tech-news-9) ⭐️ 7.0/10
+10. [Report alleges Alice Huang moved 240,000 banned Nvidia chips to China](#item-tech-news-10) ⭐️ 7.0/10
 
 **Technology Blog**
-1. [vLLM&\#x27;s Encoder Disaggregation: Metadata-Only EPD for Multimodal Serving](#item-tech-blog-1) ⭐️ 8.0/10
-2. [Why AI Makes Glue Work Less Important, Not More](#item-tech-blog-2) ⭐️ 5.0/10
+1. [vLLM Encoder Disaggregation: Metadata-Only EPD for Multimodal Serving](#item-tech-blog-1) ⭐️ 8.0/10
+2. [Glue Work Is Still a Trap in the AI Era](#item-tech-blog-2) ⭐️ 5.0/10
 
 **Financial News**
-1. [Polymarket says annualized revenue has topped $1.8 billion](#item-finance-news-1) ⭐️ 7.0/10
-2. [Fed Governor Waller Leans Toward December Rate Increase, Cites Possible Half-Point Move](#item-finance-news-2) ⭐️ 7.0/10
-3. [FCC Approves SpaceX&\#x27;s 800 MHz Spectrum Acquisition](#item-finance-news-3) ⭐️ 7.0/10
+1. [Goolsbee calls October inflation report &\#x27;borderline disturbing&\#x27; as Fed weighs rate hikes](#item-finance-news-1) ⭐️ 8.0/10
+2. [China Ends Transition Period for Offshore Trust Income Tax With Over RMB 160 Billion Declared](#item-finance-news-2) ⭐️ 8.0/10
+3. [FCC approves SpaceX&\#x27;s purchase of 800 MHz spectrum licenses](#item-finance-news-3) ⭐️ 7.0/10
 
 ---
 
 ## Technology News
 
 <a id="item-tech-news-1"></a>
-### [Microsoft announces .NET 11, a new major version of the platform](https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/) ⭐️ 9.0/10
+### [Voltage glitching used to unlock A100 features in mining card](https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/) ⭐️ 8.0/10
 
-Microsoft announced .NET 11, a new major release of its cross-platform development platform, in a devblogs post that points readers to the &quot;What&\#x27;s new in .NET 11&quot; documentation for the detailed feature list. The supplied announcement material provides limited version-level specifics, so individual API, runtime, and tooling changes could not be confirmed from it directly. Community commenters instead flagged concrete items they had read in the documentation, including runtime-level async support and a reported change in decimal literal parsing such as \(decimal\)0.1 producing 0.1000000000000000055511151231 in .NET 11 versus 0.1 in .NET 10.
+A blog post reports using voltage glitching to unlock A100-class capabilities in a mining card, a hardware-hacking procedure rather than an NVIDIA-supported modification. The write-up focuses on bypassing fused-off GPU features; commenters identify the card discussed as the 8 GB model and contrast it with the 10G CMP 170HX, which has shown 80 GB of memory but not full CUDA access. The approach carries hardware risk, and the source provides no indication that it is a general or repeatable unlock for other cards.
 
-hackernews · runesoerensen · Nov 10, 16:01 · [Discussion](https://news.ycombinator.com/item?id=50442225)
+hackernews · lae · Nov 11, 10:48 · [Discussion](https://news.ycombinator.com/item?id=50451903)
 
-**「Background」** .NET 11 follows .NET 10 as the next major version of the platform, and its runtime documentation headlines Runtime Async, a new compilation model that Microsoft says the .NET runtime libraries themselves are already built with. Microsoft&\#x27;s runtime notes for .NET 11 also list updated minimum hardware requirements alongside JIT, ReadyToRun, and WebAssembly improvements. Opting an application&\#x27;s own code into Runtime Async is a separate choice, and Microsoft advises testing dependencies and diagnostics before adopting it.
+**「Context: One die, two products」** Nvidia builds both the datacenter A100 and the mining-oriented CMP 170HX from the same GA100 die, relying on on-die fuses — programmed through the GA100&\#x27;s fuse controller — to disable memory capacity and features in the cheaper card rather than any physical difference in silicon. The blog&\#x27;s premise follows directly from that: if the limits are enforced by fuse settings, they can in principle be reversed through fault injection such as voltage glitching.
 
-**「Decimal compatibility check」** A community commenter reported that casting 0.1 to decimal yields 0.1 under .NET 10 but 0.1000000000000000055511151231 under .NET 11, and pointed readers to Microsoft&\#x27;s compatibility notes. Applications that rely on decimal for currency or exact arithmetic should verify this reported behavior against the compatibility documentation and test it before upgrading.
+**「Impact」** Owners of CMP 170HX mining cards have a potential route to repurposing the GA100-based hardware, with prior write-ups documenting unlocks to 64 GB of memory and 74 SMs and one setup using two such cards for LLM inference. The catch is that results appear card- and method-specific—one account cross-flashes the 250 W card to NVIDIA’s 300 W VBIOS—so users should validate memory, stability, and power delivery per card rather than assume a full A100 equivalent.
 
-**「Community discussion」** Commenters argued that C\# and .NET remain underappreciated largely because of legacy perception — that .NET is Windows-only or that little has changed since .NET Framework — while an ex-Microsoft commenter said large Office, Security, and Azure services run on .NET Core across both Windows and Linux. One commenter highlighted the reported decimal parsing behavior change as a compatibility concern, and another expressed surprise that runtime async support could deliver equivalent performance without compiler-generated state machines.
+**「Community discussion」** Commenters debate why NVIDIA would fuse off capacity: one speculates that an A100 may have had fabrication faults and was deliberately sold as a cheaper mining card, while another reports that the same cards rose from roughly $200 to $1k. A separate commenter trying a software-only unlock on a CMP 170HX says two weeks of effort have not succeeded and considers the fuse-based method riskier.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://learn.microsoft.com/en-us/dotnet/core/whats-new/dotnet-11/runtime">What&#x27;s new in .NET 11 runtime | Microsoft Learn</a></li>
-<li><a href="https://devblogs.microsoft.com/dotnet/announcing-dotnet-11/">Announcing .NET 11 - .NET Blog - devblogs.microsoft.com</a></li>
+<li><a href="https://blog.kate.land/posts/using-voltage-glitching-to-unlock-the-a100/">Using voltage glitching to unleash the A 100 in my mining card</a></li>
+<li><a href="https://bytwork.com/en/articles/cmp-170hx-unlock">Unlocking the CMP 170 HX : How to get 64/80 GB of memory?</a></li>
+<li><a href="https://gist.github.com/ropuls/d2978531ba3a1a183e70f62f3de2eb84">2x CMP 170 HX for LLM inference: unlock , cross-root P2P, serving...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#dotnet`, `#C\#`, `#Microsoft`, `#software release`, `#compatibility`
+**Tags**: `#voltage glitching`, `#GPU hardware hacking`, `#NVIDIA A100`, `#mining cards`, `#hardware reverse engineering`
 
 ---
 
 <a id="item-tech-news-2"></a>
-### [AMD Zen 6 Deep-Dive Details Core, I/O Die, and 32-Core Chiplets](https://chipsandcheese.com/p/amds-zen-6-family-feeding-the-beast) ⭐️ 8.0/10
+### [AWS releases official local service emulator, built in Rust by agent swarm](https://simonwillison.net/2026/Nov/11/aws-emulator/) ⭐️ 8.0/10
 
-A Chips and Cheese technical deep-dive examines AMD&\#x27;s Zen 6 architecture, covering changes to both the core and I/O die. The core-level material includes a reduction in integer multiply units from three to two, PDEP/PEXT throughput falling from three to two instructions per cycle, four vector loads per cycle at 256 bits or less, and a 32-core &quot;C&quot; core chiplet with increased L3 cache. The article also addresses the new I/O die, which commenters expect to move to a smaller node; that expectation is community discussion rather than a confirmed specification.
+AWS has published aws-emulator, an official tool on GitHub for running tests against a local clone of its services without provisioning a paid API key. The project is written in Rust and, according to a guest post by Swaminathan Sivasubramanian on Werner Vogels&\#x27; blog, logged 29,684 commits in its first three weeks, attributed to a large swarm of coding agents rather than hand-written code. It currently requires Docker on macOS and Windows; Simon Willison notes that a single downloadable binary usable in a standard test suite across other languages and platforms would be preferable, and hopes AWS addresses that later.
 
-hackernews · pixelpoet · Nov 10, 17:02 · [Discussion](https://news.ycombinator.com/item?id=50443090)
+rss · Simon Willison · Nov 11, 21:18
 
-**「Background」** AMD&\#x27;s consumer CPUs use a chiplet layout: CPU cores sit on core complex dies, while memory and I/O functions sit on a separate I/O die. Zen 4 and Zen 5 on AM5 are the immediate predecessors, and commenters identify their I/O-die memory controller as a limitation when both memory channels are populated. Zen 5 also introduced 2-ahead branch prediction, making Zen 6&\#x27;s branch-predictor changes an evolution of that prior design.
+**「Background」** Developers testing AWS integrations ordinarily exercise live service endpoints, which means provisioning cloud resources and holding credentials; a paid API key is one such requirement. A local emulator replaces those endpoints with a machine-local clone so tests can run without that cloud-side setup.
 
-**「Impact」** For AM5 users, the memory controller remains the practical bottleneck: a commenter reports that Zen 4/5 systems are extremely hard or impossible to push above 3600 MT/s when using both memory channels, making the I/O die the part to watch for anyone tuning AM5 memory speeds.
+**「Docker dependency limits test-suite use」** Developers can now run tests against local clones of AWS services without provisioning a paid API key, but on macOS and Windows the emulator requires Docker, so it cannot yet be dropped into an ordinary test suite as a single binary. It also should not stand in for authorization testing: the security documentation cited in the discussion states that the emulator never denies a request signed with its own key and does not evaluate IAM policies, resource-based policies, or KMS key policies the way AWS does, so those checks still need a real account.
 
-**「Community discussion」** Commenters focused on the memory controller, with one calling an improved I/O die the top Zen 6 priority and reporting that Zen 4/5 AM5 systems struggle above 3600 MT/s with both memory channels. Others debated whether cutting integer multiply and PDEP/PEXT throughput are linked, speculated that freed area serves VNNI pipes, and asked how a 32-core CCD would be organized below the NUMA level.
+**「Community discussion」** Commenters disagreed on whether this is a maintained product or an engineering exercise: one developer said they would stick with Floci and Testcontainers, noting those also cover GCP and Azure, while another argued that without agents AWS would never have attempted the project and that reliable clones of its services are no longer a moat. A commenter quoting the project&\#x27;s security documentation warned against using the emulator to test IAM policies, resource-based policies such as bucket policies, KMS key policies, or cross-account and cross-Region access, and said the emulator never denies a request signed with its own key.
 
-**Tags**: `#amd`, `#cpu-architecture`, `#zen6`, `#hardware`, `#chips`
+**Tags**: `#AWS`, `#local emulator`, `#software testing`, `#Rust`, `#AI agents`
 
 ---
 
 <a id="item-tech-news-3"></a>
-### [DeepMind introduces AlphaProof Code for formal code verification](https://deepmind.google/blog/introducing-alphaproof-code/) ⭐️ 8.0/10
+### [False Smoke Alarm Nearly Took Down Jane Street&\#x27;s Only NYC Datacenter](https://michael.bacarella.com/2026/11/10/false-smoke-alarm-jane-street-datacenter/) ⭐️ 7.0/10
 
-DeepMind has introduced AlphaProof Code, an AI agent for formal verification of software that generates machine-checkable proofs, with community discussion identifying Lean as the proof language. The available material presents this as a vendor announcement: it provides no supported language list, version, release date, or independent benchmark results. DeepMind&\#x27;s stated capabilities should therefore be read as announced rather than independently measured.
+A first-person account describes how a false smoke alarm nearly forced a shutdown of Jane Street&\#x27;s only New York City datacenter. The author uses the incident to examine operational dependencies around alarm and fire-suppression behavior, emergency power-off expectations, on-site staffing, and remote-access limits. The account stops short of reporting a confirmed outage or a measured design failure, presenting the event as an incident narrative and a set of lessons for infrastructure teams.
 
-hackernews · ilreb · Nov 10, 12:11 · [Discussion](https://news.ycombinator.com/item?id=50439193)
+hackernews · mbac32768 · Nov 11, 16:38 · [Discussion](https://news.ycombinator.com/item?id=50455394)
 
-**「Background」** Formal verification proves that code satisfies a mathematical specification, with a proof assistant such as Lean checking each proof step rather than relying on tests alone. DeepMind&\#x27;s work builds on earlier formal-verification efforts that covered only smaller portions of code; according to Signal&\#x27;s CTO, AlphaProof Code is intended to expand that scope, and reporting on the work says the agent produced 6.5 million lines of checked proof for Signal&\#x27;s encryption code over four weeks.
+**「Background」** Datacenter fire-safety designs vary in whether smoke detection triggers clean-agent suppression, an emergency power-off \(EPO\) interlock, or neither, depending on the written sequence of operations for the hall. Because the site was Jane Street&\#x27;s only New York City datacenter, the account treats an alarm-driven shutdown as a single-site availability problem rather than a failover event.
 
-**「Impact」** Teams adopting AlphaProof Code would still need to validate the specifications and theorems supplied to the agent, because a successful proof establishes only that code meets those stated properties. Community reports that AI-generated Lean proofs can be gamed point to adversarial review of generated proofs as a practical safeguard.
+**「Operational takeaway」** For infrastructure and SRE teams, the practical consequence is a checklist item: verify whether a site&\#x27;s smoke alarms, suppression systems, and emergency power-off procedures can be tested without creating an outage, and whether on-call staff can reach the facility when remote access is unavailable. The account presents those as operational concerns raised by the incident rather than as independently verified failures.
 
-**「Community Discussion」** Commenters questioned what a clean verification result establishes: hedora doubted that a nontrivial library could have zero bugs and suspected either incorrect theorems or narrowly scoped properties, while thibsrn noted that the agent appears to check implementation against a specification rather than challenge the specification itself. r0ze-at-hn reported experimenting with AI-generated Lean and warned that the model can &quot;cheat&quot; when writing proofs, recommending a separate adversarial prompt to review the output.
+**「Commenter debate」** Commenters debated emergency power-off design: one asked why the site lacked at minimum a physical EPO button inside the datacenter and an interlink that would de-energize equipment after smoke detection, while another said the sequences of operations they write deliberately avoid shutting down CRACs on a smoke alarm. A separate commenter described being the nearby on-call employee expected to walk in and shut down servers when remote access was unavailable.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://deepmind.google/blog/introducing-alphaproof-code/">Formal Verification of Signal’s Protocol with... — Google DeepMind</a></li>
-<li><a href="https://shiftdelete.net/en/alphaproof-code">AlphaProof Code Verifies Signal Encryption at Machine Level</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI formal verification`, `#Lean theorem proving`, `#code verification`, `#DeepMind`, `#program proofs`
+**Tags**: `#datacenter-operations`, `#incident-response`, `#site-reliability`, `#fire-suppression`, `#infrastructure`
 
 ---
 
 <a id="item-tech-news-4"></a>
-### [Protecting SSH Keys with macOS Secure Enclave](https://gatezh.com/posts/macos-secure-enclave-ssh-keys/) ⭐️ 7.0/10
+### [WSJ Headline Claims Nvidia Is Preparing to Oust CEO Jensen Huang](https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad) ⭐️ 7.0/10
 
-A practical guide explains how macOS users can protect SSH private keys by storing them in the Secure Enclave, with access gated by Touch ID or user presence. It is aimed at developers and security-conscious engineers implementing the approach on their own machines, not at a new Apple release or a shipped third-party feature. The supplied discussion treats the method as useful but flags reliability after system upgrades, fingerprint fatigue from frequent prompts, and incompatibility with fully headless automation. Because no article text is supplied, the guide&\#x27;s exact commands, supported key types, and limitations cannot be verified here.
+A Wall Street Journal headline asserts that Nvidia is preparing to oust CEO Jensen Huang, but the supplied item contains no article text, named sources, board statement, or timeline, so the claim is unverified. No confirmed leadership change, interim CEO, or reason for an ouster is available in the supplied material. Nvidia&\#x27;s central role in AI hardware makes any such move high-stakes, but that does not establish that it is happening, and the community comments are speculative rather than evidence.
 
-hackernews · js2 · Nov 11, 04:28 · [Discussion](https://news.ycombinator.com/item?id=50449748)
+hackernews · jbredeche · Nov 11, 22:31 · [Discussion](https://news.ycombinator.com/item?id=50459703)
 
-**「Background」** Apple&\#x27;s Secure Enclave is a hardware-backed key store whose private keys are designed to be non-exportable; on macOS, access can be gated by Touch ID or Apple Watch authentication, and tools such as Secretive use this capability for SSH signing. Secretive still relies on Keychain APIs to locate and read those keys—making bundle-ID consistency important—while an alternative native route uses \`sc\_auth\` with \`ssh-keychain.dylib\` instead of a separate app.
+**「Earlier investigation」** Two days before the reported board move, Nvidia opened an investigation into reports that CEO Jensen Huang was the “target of a foreign intelligence effort,” and the AP reported that the company’s shares fell 5%. According to The Guardian, Huang had also told staff in a letter that he hoped to earn back their trust.
 
-**「Impact」** Developers who use Secure Enclave-backed SSH keys for unattended work should plan a separate credential path: a commenter reports that Secretive cannot access the enclave when the machine is headless and no user is logged in, even when the key is set to notify rather than require Touch ID. The same discussion suggests keeping low-risk development keys outside the human-presence flow to avoid training users to approve prompts reflexively.
-
-**「Community Discussion」** Commenters found the approach useful but reported concrete failure modes: one said WireGuard lost keychain-backed profiles after a macOS upgrade because the app could no longer open the keychain, and another described fingerprint fatigue after 20 daily approval requests. A third argued the Secure Enclave model scales poorly for headless agentic development because access requires a logged-in human, while others recommended Secretive or a hardware token such as TKey for SSH key handling.
+**「Community discussion」** Commenters focus partly on governance mechanics: one argues that dual-class share structures common at newer founder-led companies would give a founder disproportionate voting power and make a board-led ouster much harder, though the comment does not establish Nvidia&\#x27;s own share structure. Other comments speculate about unverified causes and predict short-term instability, but provide no sourcing.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://termique.app/blog/ssh-keys-macos-touch-id/">SSH Keys on macOS with Touch ID: Secure Enclave Setup (2026)</a></li>
-<li><a href="https://github.com/maxgoedjen/secretive">GitHub - maxgoedjen/secretive: Protect your SSH keys with ... Secure SSH Keys with Secure Enclave on macOS | Pavel Popov Use TouchID for ssh with Secretive | BK&#x27;s Blog SSH key and Touch ID on Mac, the Secretive setup Protect your SSH keys with Touch ID on macOS - Korben Protecting SSH Keys with macOS Secure Enclave (Native ...</a></li>
+<li><a href="https://apnews.com/article/nvidia-jensen-huang-spy-china-63531dec0fe5c145afaac94dde31d478">Nvidia shares slide on internal investigation into CEO Jensen ...</a></li>
+<li><a href="https://www.theguardian.com/technology/2026/nov/09/jensen-huang-image-nvidia">Jensen Huang ’s image has been shattered. Could he be pushed out...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#macOS Secure Enclave`, `#SSH keys`, `#security`, `#keychain`, `#automation`
+**Tags**: `#Nvidia`, `#Jensen Huang`, `#corporate governance`, `#AI hardware`, `#semiconductor industry`
 
 ---
 
 <a id="item-tech-news-5"></a>
-### [Synaptics patent claims halt open-source DisplayLink driver work](https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/) ⭐️ 7.0/10
+### [Tim Peters, author of the Zen of Python, has died](https://discuss.python.org/t/in-memoriam-tim-peters-1952-2026/110028) ⭐️ 7.0/10
 
-Synaptics has asserted patent-infringement claims against open-source DisplayLink driver work, and development on those drivers has stopped, according to an LWN report. The dispute affects Linux users and developers who depend on DisplayLink for display output through docking stations. A demand letter quoted in the discussion seeks US$25,000 in compensation if its demands are not met by a stated deadline; the available material does not show that the claims have been adjudicated in court.
+Tim Peters, a longtime Python contributor best known for writing the Zen of Python, has died, according to an in-memoriam post on the Python community discussion forum. The post gives his lifespan as 1952–2026. Python&\#x27;s \`import this\` command prints the Zen of Python, beginning “Beautiful is better than ugly.”
 
-hackernews · speckx · Nov 10, 18:02 · [Discussion](https://news.ycombinator.com/item?id=50443824)
+hackernews · ayhanfuat · Nov 11, 07:03 · [Discussion](https://news.ycombinator.com/item?id=50450488)
 
-**「Background」** DisplayLink is Synaptics&\#x27; proprietary display-over-USB technology; its Ubuntu support is distributed through Synaptics&\#x27; own APT repository or a standalone installer rather than as an upstream kernel driver. An earlier open-source attempt, the Rust-based &quot;Vino&quot; driver built partly with AI and via clean-room reverse engineering, disappeared after Synaptics sent legal threats, establishing a pattern that precedes the current halt to DisplayLink driver work.
+**「Context」** Tim Peters wrote “The Zen of Python,” the set of design aphorisms that Python users can display with \`import this\`; its lines include “Beautiful is better than ugly” and “Readability counts.” The text is a common reference point for discussions of Python’s design philosophy, and the supplied comments also point to his contributions to the Python Cookbook and to SpamBayes. Those earlier works help explain why the remembrance extends beyond the Zen text to his broader role as a longtime Python contributor.
 
-**「Impact」** Linux users who rely on DisplayLink docks for additional monitors have fewer options for community-maintained support now that open-source driver work has stopped; Synaptics distributes its own Ubuntu driver through its APT repository or a standalone installer. That leaves driver compatibility and updates tied to vendor-provided packages rather than community fixes.
+**「Community discussion」** Commenters quoted the Zen of Python and recalled less-visible work: one credited Peters, along with Gary Robinson and Robert Woodhead, for turning Paul Graham&\#x27;s &quot;A Plan for Spam&quot; essay into SpamBayes, while others remembered his contributions to the Python Cookbook&\#x27;s second edition and his willingness to foster wide-ranging discussion.
 
-**「Community Discussion」** Commenters disputed the legal basis for treating reverse engineering as patent infringement, arguing that patents publicly disclose an invention in exchange for marketing exclusivity and that a trade-secret claim would be the more appropriate theory. Several also called the US$25,000 demand unreasonable or a scare tactic, while others described replacing DisplayLink docks with USB-C/DisplayPort Alt Mode hardware.
-
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.phoronix.com/news/Synaptics-Blocks-Vino-Driver">Synaptics Appears To Use Legal Threats To Block Open - Source ...</a></li>
-<li><a href="https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu">Ubuntu Driver for Downloads Section | Synaptics</a></li>
-<li><a href="https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu">Ubuntu Driver for Downloads Section | Synaptics</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#open source`, `#patents`, `#Linux drivers`, `#DisplayLink`, `#hardware support`
+**Tags**: `#Python`, `#Tim Peters`, `#open-source community`, `#obituary`
 
 ---
 
 <a id="item-tech-news-6"></a>
-### [Essay argues AI-assisted coding yields fragile, opaque codebases](https://evanxmerz.com/post/ai-usage-generates-a-fragile-codebase/) ⭐️ 7.0/10
+### [Linear Programming Proposed for Constrained Weight Editing](https://nathan.rs/posts/weight-space-lp/) ⭐️ 7.0/10
 
-An essay argues that AI-assisted development can produce fragile, opaque codebases, raising code-quality and maintainability concerns for developers and teams using AI coding tools. The supplied item does not include the essay&\#x27;s underlying data or methodology, so its claims are presented as an argument rather than a measured result. The post drew a substantial Hacker News discussion, with commenters disputing whether its criticisms still apply to current AI coding models and practices.
+A blog analysis on nathan.rs proposes using linear-programming solvers for constrained weight-space editing of neural networks. It presents a methodology, not a shipped tool or verified result: the supplied material contains no benchmarks or verified results and offers no independent validation. The post drew 35 Hacker News comments, where readers debated regularization, weight-space distillation, and whether math programming could replace RL loops.
 
-hackernews · plun9 · Nov 10, 10:25 · [Discussion](https://news.ycombinator.com/item?id=50438318)
+hackernews · emschwartz · Nov 11, 12:30 · [Discussion](https://news.ycombinator.com/item?id=50452655)
 
-**「Context: generation speed vs. maintainability」** AI-assisted coding tools generate code from natural-language prompts and can produce working results quickly, but they do not by themselves enforce a codebase&\#x27;s design conventions, test depth, or readability. The article&\#x27;s argument therefore turns on the gap between generation speed and the review and testing practices that keep code maintainable.
+**「Background」** Weight-space programming is an approach in which a general-purpose large language model reads and directly writes another neural network’s weights without gradient descent or a training loop \(tool-1-1\). The post follows MIT CSAIL’s “Sparks of Weight-Space Programming,” in which GPT-6 Astra was given a small network’s raw weights \(tool-1-3\); the earlier edit fixed thinking loops in Qwen3.5-0.8B through a hand-tuned search \(tool-1-2\).
 
-**「Community discussion」** Commenters disagree over whether the critique is current: iagooar argues that newer models and explicit anti-overengineering instructions mitigate shallow tests and unnecessary complexity, while momojo acknowledges the fragility and opacity described and compares AI-generated code to mass-produced injection-molded parts. peterbell\_nyc asks what adversarial reviews and deterministic maintainability gates the author used, framing review discipline and tooling as central to the argument.
+**「Community Discussion」** Commenters debated where the approach belongs: dansitu argued that its simplicity suggests it should happen during training via regularization, while mirekrusin proposed using it for weight-space distillation by collecting paired examples and finding sparse edits. whatever1 went further, asserting that traditional math programming will replace or override the RL loop because rewards and penalties cannot enforce multiple strict objectives; these are opinions, not demonstrated results.
 
-**Tags**: `#AI-assisted coding`, `#code quality`, `#software maintainability`, `#engineering practices`, `#Hacker News discussion`
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Weight-space_programming">Weight-space programming - Wikipedia</a></li>
+<li><a href="https://proomt.com/item/can-a-linear-program-do-weight-space-programming-d1a13007-a589-44d0-b87e-067ea543171c">Can a Linear Program Do Weight-Space Programming ? · proomt</a></li>
+<li><a href="https://x.com/nathanrs/status/2119845893755351417">Nathan Barry on X: &quot;In MIT CSAIL&#x27;s recent &quot;Sparks of Weight ...</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#machine-learning`, `#linear-programming`, `#weight-editing`, `#optimization`, `#model-interpretation`
 
 ---
 
 <a id="item-tech-news-7"></a>
-### [VulnCheck&\#x27;s November update tracks Anthropic-discovered vulnerabilities](https://www.vulncheck.com/blog/anthropic-glasswing-november-update) ⭐️ 7.0/10
+### [Google launches Gemini Decisions API with multimodal Decision 1](https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/) ⭐️ 7.0/10
 
-VulnCheck published a November update to its tracking of vulnerabilities discovered by Anthropic, covering findings tied to Project Glasswing, Anthropic&\#x27;s AI-driven vulnerability-discovery effort. The post is a vendor-maintained tracking list rather than an announcement of new model capability, and the supplied material does not give the number of entries, CVE identifiers, affected projects, or disclosure dates. Hacker News discussion focused on whether public tracking can represent the real impact of AI-assisted bug finding.
+Google&\#x27;s Gemini Decisions API adds Gemini Decision 1, a decision-focused model for developers. It supports the same three question types as Jev—yes/no, choice, and rubric scoring, including Jev&\#x27;s &quot;Noul&quot; term for yes/no—but accepts text, images, audio, video, and PDFs, whereas Jev is text/JSON-only and OpenAI&\#x27;s decision model handles text and images. Pricing is 10 cents per million input tokens with free output, matching the GPT-6 Luna decision model and above Jev&\#x27;s 4.2 cents per million. In a video test, Gemini returned graded probabilities for yes/no questions rather than the 1.0 or 0.0 outputs reported for Jev and OpenAI.
 
-hackernews · panic · Nov 10, 22:17 · [Discussion](https://news.ycombinator.com/item?id=50447074)
+hackernews · iamdelirium · Nov 11, 18:32 · [Discussion](https://news.ycombinator.com/item?id=50456791)
 
-**「Background」** Project Glasswing is Anthropic’s AI-assisted vulnerability-discovery effort, and VulnCheck’s November update assesses it seven months into the project. By that point VulnCheck had tracked 442 CVEs attributable to Anthropic—roughly 0.5% of all CVEs published that year—with only two identified as exploited in the wild.
+**「Background」** Gemini Decision 1 joins an existing decision-model category already occupied by Jev and OpenAI&\#x27;s GPT-6 Luna, which return structured answers for constrained questions rather than free-form text. Jev uses the same three question formats Gemini supports—yes/no, choice, and rubric scoring—including the term “Noul” for a yes/no question; Jev accepts text and JSON only, while Gemini also accepts images, audio, video, and PDFs.
 
-**「Impact」** VulnCheck reports that seven months into Project Glasswing it has tracked 442 Anthropic-attributable CVEs—about 0.5% of all CVEs published this year—while only two have been observed exploited in the wild. For open-source maintainers and security teams, that makes exploit evidence and reachability more useful triage criteria than raw AI-generated report volume; Anthropic&\#x27;s opt-in OSS Scanner also sends AI reports to projects without human review, so recipients need a process for unsolicited findings.
+**「Cost and compatibility」** Developers who need yes/no, choice, or rubric decisions over audio, video, PDFs, images, and text can send those inputs directly to Gemini Decision 1. At 10 cents per million input tokens, however, it costs more than Jev&\#x27;s 4.2 cents per million, although Gemini&\#x27;s output is free; code that expects Jev- or OpenAI-style exact 1.0/0.0 yes/no answers must also handle Gemini&\#x27;s probability values such as 0.9234.
 
-**「Community discussion」** Commenters disputed whether the tracked data can measure AI-assisted discovery&\#x27;s impact: one said the ledger covers only Anthropic&\#x27;s coordinated disclosure program for open-source software while Project Glasswing findings often land in partners&\#x27; proprietary code, and another said serious issues in private codebases never receive CVE numbers. A separate reported experience was positive: nine Fil-C issues flagged by Anthropic were all real bugs with no false positives, though the commenter used the proposed fixes mainly as inspiration rather than applying them wholesale.
+**「Community discussion」** Commenters asked how decision models calculate probabilities and whether developers are using them in coding harnesses; one described a cost calculation in which hundreds of short questions over a 100K-token context would cost roughly one search API call. Others said Gemini&\#x27;s higher price than Jev may be useful for audio and video inputs, while one commenter called the cost high but remained optimistic based on experience with another Gemma-based decision model.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.vulncheck.com/blog/anthropic-glasswing-november-update">After 7-months, Glasswing Overwelms Maintainers with... | VulnCheck</a></li>
-<li><a href="https://thehackernews.com/2026/10/anthropic-launches-free-ai.html">Anthropic Launches Free AI Vulnerability Scanner for Open-Source...</a></li>
-<li><a href="https://www.vulncheck.com/blog/anthropic-glasswing-november-update">After 7-months, Glasswing Overwelms Maintainers with... | VulnCheck</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#AI-assisted security`, `#vulnerability discovery`, `#software security`, `#Anthropic`, `#CVE tracking`
+**Tags**: `#Gemini API`, `#decision models`, `#AI developer tools`, `#Google AI`, `#model pricing`
 
 ---
 
 <a id="item-tech-news-8"></a>
-### [Chrome and partners ship modern-web-guidance 1.0 for coding agents](https://github.com/GoogleChrome/modern-web-guidance) ⭐️ 7.0/10
+### [Anthropic IPO video details four-chip Claude strategy and a three-day AMD port](https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/) ⭐️ 7.0/10
 
-Chrome, with Firefox, MDN, and Edge, has released version 1.0 of modern-web-guidance, an open-source agent skill and CLI containing more than 200 curated guides intended to make coding agents prefer native browser APIs over older JavaScript patterns. The package is about 1.7MB, includes a pure-JS search index reported at roughly 7MB with ~10ms query times, and adds a deterministic legacy-scan trained on 30,000 GitHub repos to identify patterns agents can modernize. The project reports that agents using the guidance passed 92% of about 1,700 Playwright/AST assertions across 200 tasks, up from 55% unguided; those evaluation and performance figures are vendor claims, not independent measurements. It is available through npx modern-web-guidance@latest install, search, and legacy-scan commands.
+Anthropic&\#x27;s IPO roadshow video, highlighted by Simon Willison, includes a &quot;Approach to compute&quot; segment in which co-founder Tom Brown says the company now trains and serves Claude across all four major chip families: AWS Trainium, Google TPUs, NVIDIA GPUs and AMD GPUs. Brown describes the multi-chip bet as unconventional because each chip needs its own tailored software and inference stack, and says Anthropic began working with AMD GPUs for the first time this year; where bringing on a new platform previously took dozens of engineers months, Anthropic says a system it calls Mythos got Claude running on AMD in three days with almost no human intervention, writing or porting nearly 100% of the kernels. Brown also describes a focus on &quot;total effective compute&quot; — physical capacity multiplied by discovered compute multipliers — and says Anthropic believes Claude will eventually discover such multipliers by itself as it approaches recursive self-improvement. These are the company&\#x27;s own claims from a roadshow presentation, not independently measured results, and Willison notes there is no official transcript; he published one he extracted with MacWhisper.
 
-hackernews · paulirish · Nov 10, 18:01 · [Discussion](https://news.ycombinator.com/item?id=50443812)
+rss · Simon Willison · Nov 11, 15:11
 
-**「Why this guidance exists」** Modern browsers now natively handle tasks that previously required custom JavaScript or dependencies — the source cites \`&lt;dialog&gt;\` and \`showModal\(\)\` for modal focus and backdrop behavior, \`CSS.highlights\` for text-range highlighting, and \`field-sizing\` for auto-growing textareas. The project&\#x27;s premise is that coding agents often recognize these APIs by name but still default to incumbent \`&lt;div&gt;\`-plus-JavaScript patterns, so the guidance supplies platform-specific domain knowledge at generation time.
+**「Earlier hints and IPO context」** Anthropic had already hinted at a non-uniform compute fleet: a September postmortem of three recent incidents described bugs that affected only its TPU deployments. The roadshow video is part of the company&\#x27;s IPO marketing, and the same roadshow set a long-term adjusted operating margin target above 35% while disclosing that its seven co-founders would sell about $1.75 billion of stock in the offering.
 
-**「Impact」** Developers adopting the skill should check recommended APIs against their target browsers: a commenter lists features such as CSS @function, calc-size\(\), and flex-wrap: balance as stable in Chrome but unsupported in Firefox and Safari, so agent-generated code could widen cross-browser gaps despite the collaboration with Firefox and Edge.
-
-**「Community discussion」** Commenters surfaced a cross-browser tension: surround listed guidance-recommended features that are stable in Chrome but not supported by Firefox or Safari, while advisedwang argued that LLMs following Chrome&\#x27;s guidance could further entrench one browser and revive “view in \[dominant browser\]” warnings. simonw suggested publishing a grep-friendly Markdown index on GitHub Pages so agents can fetch guidance over HTTP without installing the npm package, and bakkoting reported filing an issue about using fromBase64/toBase64 instead of atob/btoa.
-
-**Tags**: `#coding-agents`, `#web-platform`, `#open-source`, `#browser-standards`, `#developer-tools`
-
----
-
-<a id="item-tech-news-9"></a>
-### [MiniMax opens MiniMax H3 Image weights with 10-second 4K generation](https://huggingface.co/MiniMaxAI/MiniMax-H3-Image) ⭐️ 7.0/10
-
-MiniMax released open weights for MiniMax H3 Image, an image model for developers and image-generation users that supports text-to-image, image-reference, and image-editing workflows and is available on Hugging Face and through MiniMax&\#x27;s API. The company says the model can produce 4096×4096 images—about 16 megapixels—in roughly 10 seconds and accept up to 16 reference images. It also claims standard-mode generation at 1.5–2× the speed of “mainstream tools” and 3–4× in a Highspeed mode; these figures are vendor claims without independent benchmarks. Standard 4K generation is listed at about $0.069 per image, with a launch-week price of about $0.034, and the model is integrated into MiniMax Code and Hailuo.
-
-telegram · zaihuapd · Nov 10, 15:39
-
-**「Background」** “Open weights” means MiniMax published the model’s trained parameters for download on Hugging Face, so the model can be run locally or adapted, not only accessed through a hosted API. The stated 4096×4096 output is roughly 16 megapixels, the resolution the release describes as 4K.
-
-**「Impact」** Developers can download the weights from Hugging Face to test 4K, multi-reference image editing with self-hosting, or use the API at the listed per-image price; the source does not specify hardware requirements for local deployment.
-
-**Tags**: `#image-generation`, `#open-weights`, `#text-to-image`, `#image-editing`, `#minimax`
-
----
-
-<a id="item-tech-news-10"></a>
-### [Telegram Post Claims Public Launch of Gemini 4 Carbon](https://deepmind.google/models/model-cards/gemini-4-carbon/) ⭐️ 7.0/10
-
-A Telegram post claims Google has made Gemini 4 Carbon publicly available as its flagship model, emphasizing cybersecurity and long-horizon agent workflows and ranking it first on benchmarks including CursorBench 4.0. The post says the model is offered through the Gemini API, Google AI Studio and Gemini for business at $2 per million input tokens and $10 per million output tokens—the same price as Argon—and is in preview for /swarm multi-agent collaboration in Antigravity. It also claims Gemini 4 Carbon costs more than 2x less than the next-best external model, but the item is a single promotional post with no independent verification or technical detail.
-
-telegram · zaihuapd · Nov 10, 15:48
-
-**「Built on the prior Gemini 4 release」** Gemini 4 Carbon is built on Gemini 4 Argon, the flagship Google DeepMind shipped immediately before it: the Carbon model card lists Argon as the base and describes text, image, audio and video inputs within a combined input-output context window of up to 1M tokens. The source post also notes Carbon carries Argon&\#x27;s pricing — $2 per million input tokens and $10 per million output tokens.
-
-**「Impact」** If the stated availability holds, developers building security or long-horizon agent applications could use Gemini 4 Carbon through the Gemini API at the quoted $2/$10 per-million-token rates; they should verify the model card, quotas and benchmark methodology before relying on the launch or pricing claims.
+**「Impact」** For organizations weighing AI hardware commitments, Anthropic&\#x27;s account puts a concrete number on porting cost: if a model can write nearly all of a new chip&\#x27;s kernels in three days rather than consuming dozens of engineers for months, the penalty for spanning multiple vendors falls and buyers gain more room to play AWS, Google, NVIDIA and AMD against each other. That rests entirely on Anthropic&\#x27;s own roadshow claim, with no independent verification of the three-day AMD port or of how much human oversight the process actually required.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://deepmind.google/models/model-cards/gemini-4-carbon/">Gemini 4 Carbon - Model Card — Google DeepMind</a></li>
-<li><a href="https://www.youtube.com/watch?v=sUcvhFGc4mw">Inside the lab: How Google built Gemini 4 for coding agents - YouTube</a></li>
+<li><a href="https://bingx.com/en/flash-news/post/anthropic-targets-adjusted-operating-margin-and-billion-founder-share-sale-in-ipo">Anthropic Targets 35% Long-Term Operating Margin; Founders to Sell...</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#Gemini 4 Carbon`, `#Google DeepMind`, `#AI models`, `#AI agents`, `#cybersecurity`
+**Tags**: `#Anthropic`, `#AI infrastructure`, `#multi-chip strategy`, `#IPO`, `#hardware`
+
+---
+
+<a id="item-tech-news-9"></a>
+### [Paper argues &\#x27;AI slop&\#x27; is a community judgement, not a content property](https://www.reddit.com/r/MachineLearning/comments/1xtour7/ai_slop_is_a_social_judgement_r/) ⭐️ 7.0/10
+
+A Reddit r/MachineLearning link post highlights a Nature Human Behaviour paper that reframes “AI slop” as a social judgement rather than a detectable property of content. According to the post, a community makes that judgement when it decides that some AI-generated content is unwanted, and studying slop this way is claimed to make it measurable and governable. The submission provides no methodology, data, or specific findings, so the paper’s proposed measures and governance implications cannot be verified from the supplied material alone.
+
+reddit · r/MachineLearning · /u/learning\_by\_looking · Nov 11, 18:03
+
+**「Background」** “AI slop” has been used as a loose label for AI-generated content that people find unwanted or low-quality, without an agreed way to identify it from the content itself. The Nature Human Behaviour paper is a conceptual social-science argument: it proposes that the label be studied as a community judgement, which is the precondition for its claim that slop can be measured and governed.
+
+**「Governance needs community norms, not just detectors」** If &quot;slop&quot; is a community judgement rather than a property detectable in the content itself, a classifier&\#x27;s output cannot by itself establish that a post is slop: moderation and content-governance policies would have to name which community&\#x27;s norms are being applied and what those norms are. Wikipedia&\#x27;s existing entry already frames slop as content &quot;perceived as lacking in effort, quality, or meaning,&quot; which puts perception rather than an intrinsic artifact at the center of the label. The paper&\#x27;s authors present measurability and governability as the aim of the reframing, not as a demonstrated result, so the practical governance mechanism remains unverified from the linked material.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/AI_slop">AI slop - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#AI slop`, `#AI-generated content`, `#social science research`, `#content governance`, `#machine learning community`
+
+---
+
+<a id="item-tech-news-10"></a>
+### [Report alleges Alice Huang moved 240,000 banned Nvidia chips to China](https://www.tomshardware.com/tech-industry/policy/alice-huang-reportedly-instrumental-in-securing-over-usd7-5-billion-of-nvidia-ai-gpu-imports-during-three-year-relationship-with-jensen-huang-helped-move-240-000-banned-chips-into-china-mostly-h100-and-h200) ⭐️ 7.0/10
+
+The Information reported, according to Tom&\#x27;s Hardware, that Alice Huang used her relationship with Nvidia CEO Jensen Huang to help about 240,000 restricted Nvidia AI chips—mostly H100 and H200 GPUs—enter China, with imports valued at roughly $7.5 billion. The report names Shanghai Century Litong and Singapore-based Megaspeed as companies involved. The allegations have not been independently confirmed, and the supplied summary does not detail the evidence behind the figures.
+
+telegram · zaihuapd · Nov 11, 14:41
+
+**「Background」** Nvidia&\#x27;s H100 and H200 are data-center GPUs used for AI training and inference, and U.S. export controls restrict their sale to China absent a license, which is why the reported shipments are described as banned chips. The Information&\#x27;s investigation centers on whether intermediaries in Shanghai and Singapore were used to move such hardware into China, a routing pattern that falls within the scope of export-control enforcement.
+
+**「Impact」** The allegation creates concrete compliance exposure for Nvidia&\#x27;s distribution chain: H100 and H200 exports to China are restricted, so the intermediaries named in the report could face scrutiny over end-user and end-use checks.
+
+**Tags**: `#Nvidia`, `#AI芯片出口管制`, `#H100/H200`, `#供应链合规`, `#行业调查`
 
 ---
 
 ## Technology Blog
 
 <a id="item-tech-blog-1"></a>
-### [vLLM&\#x27;s Encoder Disaggregation: Metadata-Only EPD for Multimodal Serving](https://vllm.ai/blog/2026-11-11-encoder-disaggregation-epd) ⭐️ 8.0/10
+### [vLLM Encoder Disaggregation: Metadata-Only EPD for Multimodal Serving](https://vllm.ai/blog/2026-11-11-encoder-disaggregation-epd) ⭐️ 8.0/10
 
 rss · vLLM Blog · Nov 11, 00:00
 
-**「Background」** Multimodal inference adds an encoding stage — images, video frames, and audio become embeddings — before prefill and decode, and its demand shifts with media size and modality independently of language-model load. vLLM&\#x27;s EPD disaggregation deploys encoder, prefill, and decode as separate instances, but earlier handoffs still made the downstream consumer re-fetch, decode, and preprocess media the encoder had already handled.
+**「Background」** Multimodal requests pass through an encoder that turns images, video, and audio into embeddings before prefill and decode can run, and encoder demand varies with media size and modality independently of language-model load. Encoder/Prefill/Decode \(EPD\) disaggregation deploys these stages as separate vLLM instances so operators can scale each tier on its own hardware.
 
-**「Solution」** The post describes five changes. Metadata-only requests replace downstream media with encoder-published structural metadata — image\_grid\_thw, video\_grid\_thw plus timestamps for Qwen3-VL, audio token counts — so consumers rebuild placeholders while embeddings arrive through NIXL \(CPU EC\) or Mooncake TransferEngine. A dedicated Model Runner V2 MMEncoderModelRunner skips token sampling and irrelevant checkpoint shards: on a pruned Kimi-K3 checkpoint it read 2 of 96 shards, cutting load from 683s to 0.31s. Transfer buffers now carry per-modality widths, since Qwen3-Omni emits 8192-wide visual and 2048-wide audio outputs. Mooncake Store adds cross-encoder reuse; in a six-H20 reassignment run, repeated encodings dropped from 512 to zero and TTFT p50 fell from 1.209 to 0.819s. Audio metadata-only lifted throughput from 62.21 to 73.13 requests/s, though accuracy slipped from 75.90% to 75.65%, which the authors say remains to be investigated. For DeepSeek V4.1 Flash on GB200, EPD beat PD by 6.6–9.5% per-GPU throughput and 44–47% lower P90 TTFT at concurrency 64–128 counting all 12 GPUs, but lost at 16 and broke even at 32. Because metadata-only consumers lack the original media, failed transfers now fail the affected request rather than risking EngineCore.
+**「Solution」** In this progress report, the authors describe five changes. Metadata-only requests replace the downstream media item with a reference carrying the layout the encoder already computed—grids such as image\_grid\_thw, video timestamps, audio token counts—so the consumer rebuilds placeholders without re-fetching or re-preprocessing pixels; on an audio benchmark \(Qwen3-Omni-30B, MMAU test-mini, 1E+1PD, concurrency 64\) this raised throughput from 62.21 to 73.13 requests/s and cut mean latency from 980 to 853 ms, with accuracy moving from 75.90% to 75.65%, a gap the authors say needs investigation. Encoder-only instances get a dedicated Model Runner V2 path, CUDA Graph capture, and trimmed checkpoint loading, which on a pruned Kimi-K3 checkpoint dropped weight loading from 683 s to 0.31 s by reading 2 of 96 shards. Embeddings travel over NIXL or Mooncake, with per-modality output widths measured at init \(8192 visual, 2048 audio on Qwen3-Omni\) so buffers match, and failed transfers fail the affected request rather than crashing EngineCore. Mooncake Store adds cross-encoder cache reuse; in a controlled reassignment test on six H20 GPUs it cut repeated image encodings from 512 to zero and TTFT p50 from 1.209 to 0.819 s. Orchestration in vLLM Router, SMG, and llm-d scales all this independently. The results are honest: on DeepSeek V4.1 Flash, EPD beat the PD baseline by 6.6–9.5% per-GPU throughput only at concurrency 64–128 \(with 44–47% lower P90 TTFT\), lost at 16 and broke even at 32, and the 94–115% video gain folds in GPU preprocessing and NVDEC decoding. Cross-encoder reuse currently covers images only, with TP=1 and no dynamic LoRA.
 
-**「Takeaway」** The authors&\#x27; point is that EPD works by removing duplicated preprocessing and shared-state friction, not by separation itself — the gains appear only under the right load and reuse conditions, and remain vendor- and community-run measurements.
+**「Takeaway」** The authors argue that encoder disaggregation pays off only when media demand and load justify it, and that the remaining work is coordination—suppressing redundant encoding when prefill already has the embeddings, plus observability to tell compute, cache hits, and transfer apart.
 
-**Tags**: `#encoder disaggregation`, `#multimodal serving`, `#vLLM`, `#remote embedding transfer`, `#cross-encoder caching`
+**Tags**: `#multimodal serving`, `#encoder disaggregation`, `#vLLM`, `#remote embedding transfer`, `#GPU inference performance`
 
 ---
 
 <a id="item-tech-blog-2"></a>
-### [Why AI Makes Glue Work Less Important, Not More](https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/) ⭐️ 5.0/10
+### [Glue Work Is Still a Trap in the AI Era](https://seangoedecke.com/glue-work-is-still-harmful-in-the-age-of-ai/) ⭐️ 5.0/10
 
 rss · Sean Goedecke · Nov 11, 00:00
 
-**「Background」** Glue work is the informal, often unrewarded coordination labor—meetings, updates, onboarding, reports—that keeps software teams running. Sean Goedecke, who has argued that processes dependent on such sacrifice should fail, asks whether LLM-written code frees engineers to do more of it.
+**「Background」** Sean Goedecke argues that glue work—the unglamorous coordination, reporting, documentation, and onboarding that keeps software teams running—is especially harmful when it depends on unrewarded volunteer labor; such processes, he says, ought to fail.
 
-**「Solution」** He argues the opposite: glue work is less important to companies than it was in the 2010s, for four asserted reasons. AI agents let one engineer take on work that once required a small team, reducing coordination tasks like kickoffs and status meetings; the end of ZIRP \(zero-interest-rate policy\), he says, forced out or moderated many ego-driven gatekeepers, lowering the need to manage difficult people; fewer junior hires mean less informal onboarding; and LLMs can quickly produce write-only “proof of work” reports and compliance templates, even if nobody reads them. He insists this does not mean all glue work can be automated: communicating with colleagues—status checks, replies, pings—should be written by the engineer, because delegating it to an LLM will damage relationships.
+**「Solution」** He asks whether LLMs, now writing much of our code, free engineers to do more glue work, and answers no: he believes glue work matters less to companies than it did in the 2010s. His reasons are that AI agents let one engineer carry projects that once needed a small team, removing kickoff and status coordination; that the post-ZIRP labor market has reduced the influence of difficult gatekeepers who demanded consultation; that fewer junior hires mean less onboarding support; and that write-only “proof of work” reports can be generated with LLMs, since their purpose was never to be read. But he insists LLMs cannot automate all coordination: status checks, replies, and other interpersonal messages should be composed by the engineer, because making colleagues talk to an LLM will damage relationships. His prescription is to avoid becoming the permanent glue-work person, let bad processes fail, do small amounts of tactical glue work where it helps a project, and spend most time on code—driving AI agents and aligning them with company values.
 
-**「Takeaway」** His conclusion is that engineers should still avoid becoming “the glue work person” and let bad processes fail, while doing only small tactical glue work that helps their projects. Most effort, he says, should remain on code and on directing AI agents toward company values.
+**「Takeaway」** Goedecke’s conclusion is that AI reduces the write-only and coordination overhead that created glue-work roles without making human communication dispensable; engineers should use LLMs tactically but refuse to become the default coordinator.
 
-**Tags**: `#glue work`, `#AI coding agents`, `#engineering culture`, `#career advice`, `#team coordination`
+**Tags**: `#glue work`, `#AI coding agents`, `#LLM communication`, `#software engineering culture`, `#coordination`
 
 ---
 
 ## Financial News
 
 <a id="item-finance-news-1"></a>
-### [Polymarket says annualized revenue has topped $1.8 billion](https://www.cnbc.com/2026/11/10/polymarket-annualized-revenue-us-growth.html) ⭐️ 7.0/10
+### [Goolsbee calls October inflation report &\#x27;borderline disturbing&\#x27; as Fed weighs rate hikes](https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html) ⭐️ 8.0/10
 
-Polymarket told CNBC its annualized revenue has surpassed $1.8 billion, up from more than $1 billion reported in June, as its U.S. exchange saw over $14.5 billion in notional volume in October versus $4 billion in June. The company has also begun a $1 billion funding round valuing it at $21 billion, while it faces a Commodity Futures Trading Commission investigation into its advertising practices and past access restrictions for U.S. residents.
+Chicago Fed President Austan Goolsbee called October&\#x27;s inflation report &quot;borderline disturbing&quot; after the consumer price index rose 0.4% on a seasonally adjusted basis, faster than economists had forecast and the third straight month of outsized increases. Other Fed officials said the central bank may need to act more decisively, and fed funds futures priced a December rate increase, with 15% odds of a half-point move, according to CME&\#x27;s FedWatch tool.
 
-rss · CNBC Finance · Nov 10, 13:00
+rss · CNBC Finance · Nov 11, 16:49
 
-**「Background」** Polymarket launched its U.S. exchange in May 2026 as a separate venue from its offshore platform, which it had promised to keep closed to U.S. users under a 2022 settlement with the Commodity Futures Trading Commission. The CFTC is now investigating whether Polymarket violated that settlement, which underpins the regulatory risk hanging over its domestic growth.
+**「Background」** The Fed raised its benchmark rate by a quarter point — 0.25 percentage point — in September to a 3.75%-4% range and held it there in October; it normally moves in quarter-point steps, making a half-point increase unusually large.
 
-<details><summary>References</summary>
-<ul>
-<li><a href="https://www.reuters.com/business/finance/us-agency-is-again-probing-if-polymarket-broke-2022-settlement-sources-says-2026-10-27/">US agency is again probing if Polymarket broke 2022 ...</a></li>
-
-</ul>
-</details>
-
-**Tags**: `#Polymarket`, `#prediction markets`, `#revenue growth`, `#private financing`, `#CFTC regulation`
+**Tags**: `#Federal Reserve`, `#inflation`, `#interest rates`, `#monetary policy`, `#CPI`
 
 ---
 
 <a id="item-finance-news-2"></a>
-### [Fed Governor Waller Leans Toward December Rate Increase, Cites Possible Half-Point Move](https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html) ⭐️ 7.0/10
+### [China Ends Transition Period for Offshore Trust Income Tax With Over RMB 160 Billion Declared](https://www.news.cn/20261111/9bcce99c779b4a6197ff45bbbc3e4c50/c.html) ⭐️ 8.0/10
 
-Federal Reserve Governor Christopher Waller said he leans toward a December rate increase and would consider a half-point \(0.5 percentage point\) move if inflation readings are hotter than forecast. October CPI rose 0.4% for headline and 0.3% for core prices excluding food and energy, each 0.1 percentage point above consensus, and traders fully priced a quarter-point December increase while assigning 12.5% odds to a half-point move.
+China&\#x27;s State Taxation Administration said on November 11 that the 90-day transition period for taxing offshore trust income has ended, with more than RMB 160 billion in personal income tax cumulatively declared and over RMB 120 billion of that paid into government coffers in October alone. The authority attributed a nearly 90% year-on-year rise in national October personal income tax revenue partly to those payments, and said it will pursue back taxes and late fees from those who failed to declare or under-reported.
 
-rss · CNBC Finance · Nov 10, 17:13
+telegram · zaihuapd · Nov 11, 10:35
 
-**「Background」** The Fed held rates steady at its October meeting after a quarter-point increase in September; Waller argued that failing to carry out expected increases would loosen policy in an undesirable way and risk the central bank&\#x27;s credibility.
+**「Background」** The 90-day window was set by a July 24, 2026 notice from the finance ministry and the tax authority, which waived late-payment surcharges for taxpayers who declared and paid offshore trust income tax within the period.
 
-**Tags**: `#Federal Reserve`, `#monetary policy`, `#interest rates`, `#inflation`, `#CPI`
-
----
-
-<a id="item-finance-news-3"></a>
-### [FCC Approves SpaceX&\#x27;s 800 MHz Spectrum Acquisition](https://wap.cj.sina.cn/7x24/5206981) ⭐️ 7.0/10
-
-The U.S. Federal Communications Commission approved SpaceX&\#x27;s acquisition of 546 paired 800 MHz spectrum licenses through a deal with Grain Management, covering nearly the entire U.S. population.
-
-telegram · zaihuapd · Nov 11, 02:14
-
-**「Background」** The 800 MHz band is low-band, paired spectrum that travels far and penetrates buildings, making it useful for nationwide mobile coverage; the FCC said the licenses had been underutilized in recent years.
-
-**「Impact」** US wireless carriers face a new competitor, and households could gain an alternative mobile coverage option, because SpaceX&\#x27;s low-band licenses cover nearly the entire population and penetrate buildings, while Verizon, AT&amp;T and T-Mobile declined to grant it network access.
+**「Who is affected」** High-net-worth individuals with offshore trust income who failed to declare or underreported now face demands to pay back taxes plus late-payment charges, and possible tax audits if they still do not correct their filings.
 
 <details><summary>References</summary>
 <ul>
-<li><a href="https://arstechnica.com/tech-policy/2026/10/starlink-spectrum-deal-boosts-musk-plan-to-beat-att-t-mobile-and-verizon/">Starlink spectrum deal boosts Musk plan to beat AT... - Ars Technica</a></li>
-<li><a href="https://www.phonearena.com/news/spacex-closer-to-becoming-threat-to-t-mobile-verizon-and-at-t_id184460">SpaceX could soon turn up the heat on T - Mobile , Verizon , and AT &amp; T</a></li>
-<li><a href="https://finance.yahoo.com/technology/articles/real-consequences-t-verizon-t-134500537.html">‘Real consequences’: AT&amp;T, Verizon and T-Mobile warn FCC as Elon...</a></li>
-<li><a href="https://www.thenews.com.pk/latest/1419259-spacex-vs-telecom-elon-musks-starlink-enters-mobile-marketwhat-to-know">SpaceX vs. Telecom : Elon Musk&#x27;s Starlink enters mobile...</a></li>
+<li><a href="https://t.me/zaihuapd/45068">在花 科技圈 – Telegram</a></li>
 
 </ul>
 </details>
 
-**Tags**: `#FCC`, `#SpaceX`, `#spectrum acquisition`, `#US telecom`, `#regulation`
+**Tags**: `#offshore trusts`, `#personal income tax`, `#tax enforcement`, `#China fiscal policy`, `#high-net-worth taxation`
+
+---
+
+<a id="item-finance-news-3"></a>
+### [FCC approves SpaceX&\#x27;s purchase of 800 MHz spectrum licenses](https://wap.cj.sina.cn/7x24/5206981) ⭐️ 7.0/10
+
+The U.S. Federal Communications Commission approved SpaceX&\#x27;s acquisition of 546 paired 800 MHz licenses from Grain Management, covering nearly the entire U.S. population. After the deal, SpaceX would hold up to 89 MHz of low-band spectrum in each coverage area, and Verizon, AT&amp;T and T-Mobile have declined to give SpaceX access to their networks.
+
+telegram · zaihuapd · Nov 11, 02:14
+
+**「Background」** The FCC is the independent U.S. agency that regulates radio frequency use, so its approval is the regulatory step needed for a spectrum-license transfer to proceed.
+
+**「Who is affected」** Because Verizon, AT&amp;T and T-Mobile declined to give SpaceX access to their networks, the 800 MHz licenses can only reach U.S. phone users if SpaceX builds its own radio network — leaving households and businesses in poorly covered areas waiting on a costly build-out before any new mobile option appears.
+
+<details><summary>References</summary>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Federal_Communications_Commission">Federal Communications Commission - Wikipedia</a></li>
+
+</ul>
+</details>
+
+**Tags**: `#SpaceX`, `#FCC`, `#spectrum licenses`, `#US telecom`, `#regulatory approval`
 
 ---
